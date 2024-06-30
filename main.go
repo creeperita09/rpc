@@ -37,6 +37,7 @@ func setActivity() {
 	}
 	diff := christmas.Unix() - now.Unix()
 	sleeps := int64(math.Ceil(float64(diff) / 60 / 60 / 24))
+	var details string
 	if sleeps > 1 {
 	        details := fmt.Sprintf("%d sleeps left", sleeps)
         } else {
